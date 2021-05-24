@@ -1,6 +1,6 @@
 const db = require('../models/db.js');
 var ObjectId = require('mongodb').ObjectID;
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const saltRounds = 10;
 const { validationResult } = require('express-validator');
 

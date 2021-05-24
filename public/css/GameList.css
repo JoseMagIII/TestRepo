@@ -1,0 +1,328 @@
+@charset "ISO-8859-1";
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@700&display=swap');
+
+html, body{
+	background:#2A2A2A ;
+	margin: 0px;
+    height: 140%;
+	
+}
+
+#body
+{
+	margin: 0 auto;
+}
+
+
+
+#content{
+width: 867px;
+margin: 0px auto;
+height: 100%;
+background:  #3D3D3D;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+position: relative;
+}
+
+#content2{
+	width: 767px;
+	position: relative;
+	margin: auto;
+	height: 110%;
+	top: 60px;
+}
+
+#content2body{
+	background: #141414;
+	position: relative;
+	height: 100%;
+}
+
+#content2footer{
+	background: #393939;
+	color: white;
+	height: 61px;	
+}
+
+#footerheading{
+
+	
+position: relative;
+left: 20px;
+top: 12px;
+
+font-family: Cabin;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 36px;
+
+color: #FFFFFF;
+
+}
+
+#editlistbutton{
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration: none;
+  background-color: #52E374;
+  color: white;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #52E374;
+  border-right: 1px solid #52E374;
+  border-bottom: 1px solid #52E374;
+  border-left: 1px solid #52E374;
+  
+  
+  position: relative;
+  left: 650px;
+  bottom: 25px;
+}
+
+.listelements{
+	width: 700px;
+	height: 250px;
+	position: relative;
+	bottom: 10px;	
+}
+
+#mylist{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  position: relative;
+  top: 48px;
+  left: 58px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#commentsection{
+	overflow: auto;
+	position: relative;
+	top: 20px;
+	width:  800px;
+	height: 800px;
+
+}
+#commentheading{
+	font-family: Cabin;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 36px;
+
+color: #FFFFFF;
+}
+
+#commentbox{
+width: 660px;
+height: 80px;
+
+position: relative;
+bottom: 87px;
+left: 100px;
+
+background: #FFFFFF;
+
+padding-left:0;
+padding-top:0;
+padding-bottom:0.4em;
+padding-right: 0.4em;
+
+resize: none;
+}
+
+::placeholder {
+  color: #C2C2C2;
+  font-size: 20px;
+}
+
+#commentlist{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.commentelements{
+	width: 400px;
+	height: 100px;
+}
+
+.comment{
+	width: 500px;
+	height: 80px;
+	
+	position: relative;
+	bottom: 85px;
+	left: 115px;
+	
+	font-family: Cabin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 24px;
+	
+	color: #FFFFFF;
+}
+
+.heart{
+	width: 25px;
+	height: 25px;
+	position: relative;
+	right: 10px;
+	top: 2px;
+}
+
+#listHeart{
+	width: 25px;
+	height: 25px;
+	position: relative;
+	right: 10px;
+	top: 2px;
+}
+
+.commentbuttons{
+	background: #525252;
+	border-radius: 6px;
+	width: 64px;
+  	height: 34px;
+  	border-style: solid;
+  	border-color: #525252;
+	
+	position: relative;
+	bottom: 165px;
+	left: 700px;
+	cursor: pointer;
+}
+
+.commentbuttons:focus {
+  outline: none;
+}
+
+#listlikes{
+	background: #525252;
+	border-radius: 6px;
+	width: 100px;
+  	height: 34px;
+  	border-style: solid;
+  	border-color: #525252;
+  	
+  	position: relative;
+  	bottom: 22px;
+  	left: 430px;
+  	cursor: pointer;
+}
+
+#listlikes:focus {
+  outline: none;
+}
+
+#numLikes{
+	position: relative;
+	bottom: 25px;
+	left: 15px;
+	font-family: Cabin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 24px;
+
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.GameTitle{
+	width: 700px;
+	font-family: Roboto Condensed;
+	font-style: normal;
+	font-size: 33px;
+	line-height: 39px;
+	
+	
+	
+	position: relative;
+	bottom: 100px;
+	left: 40px;
+	color: white;
+	text-decoration: none;
+}
+
+.line{
+	border: 1px solid #FFFFFF;
+	width: 650px;
+	height: 0px;
+}
+
+#commentsection::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+#commentsection::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+ 
+
+#commentsection::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 5px;
+}
+
+#commentsection::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+#content2body img{
+	width: 133px;
+	height: 178px;
+	position: relative;
+	bottom: 10px;
+	}
+	
+.avatar{
+	width: 87px;
+	height: 80px;
+	
+}
+
+.number{
+	position: relative;
+	bottom: 25px;
+	left: 15px;
+	font-family: Cabin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 24px;
+
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.delete{
+	position: relative;
+	left: 680px;
+	bottom: 170px;
+	
+	background: none;
+
+  	border-style: none;
+  	border-color: none;
+	
+	cursor: pointer;
+	color: white;
+	font-size: 20px;
+}

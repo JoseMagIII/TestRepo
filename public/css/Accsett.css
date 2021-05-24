@@ -1,0 +1,270 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+html{
+	/*display:table;*/
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	margin:auto;
+}
+
+body{
+	background: #2A2A2A;
+	margin:0px;
+	width: 100%;
+}
+
+
+#content{
+margin: auto;
+	width: 867px;
+	height: 1200px;
+	background: #3D3D3D;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#firstline{
+	display: table;
+	margin-bottom:30px;
+
+}
+
+#upload{
+
+	left:50px;
+	position:relative;
+	top:50px;
+	width:250px;
+
+	
+}
+
+.inputs, #uploadtext{
+	font-family: Cabin;
+	color:white;
+
+}
+
+#bio{
+	height:225px;
+	width:475px;
+	margin-left:80px;
+	margin-top:50px;
+}
+
+#username{
+	width: 250px;
+	height: 100px;
+	margin-top:150px;
+
+
+}
+
+#name{
+	text-align:center;
+	color:white;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#belowobjects{
+
+	
+}
+
+#uploadtext{
+	margin-left:50px;
+	margin-bottom:60px;
+}
+
+
+#save, #del{
+	color:white;
+	font-family: 'Roboto Condensed', sans-serif;
+	
+	border:0px;
+	font-size:15px;
+	text-align:center;
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#save{
+	height:22px;
+	width:95px;
+	margin-left:334px;
+	background-color: #52e374;
+
+
+}
+
+#del{
+	height:19px;
+	font-size:18px;
+	background-color: red;
+}
+
+
+#secondline{
+	margin-left:50px;
+	display:flex;
+	flex-direction:row;
+}
+
+#updateform{
+	flex-direction:column;
+}
+
+
+
+#updateuser, #updatepass, #confirmpass, #currentpass{
+	height:20px;
+	width: 275px;
+	font-size:11pt;
+	margin-bottom: 20px;
+}
+
+#favorites{
+	display:flex;
+	flex-direction:column;
+}
+
+label{
+	font-size:13pt;
+}
+
+#favoritestext{
+	font-size:20pt;
+}
+
+#favoritestext{
+	margin-left:185px;
+	color:white;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.upload{
+	margin-left:40px;
+}
+
+#topmost{
+	display: flex;
+	margin-bottom:30px;
+}
+
+#btn{
+	left: 220px;
+	bottom: 90px;
+	
+	position:relative;
+}
+
+#error{
+	color:white;
+	font-family: 'Roboto Condensed', sans-serif;
+	position:relative;
+	left: 400px;
+	bottom:70px;
+	height:20px;
+}
+
+#error:empty {
+    height: 20px;
+   
+}
+
+#images{
+	position:relative;
+	left:40px;
+	top:35px;
+}
+
+#options{
+  display: none;
+  position: absolute;
+  background-color: #2A2A2A;
+  min-width: 500px;
+  z-index: 1;
+  text-align: right;
+  
+  top: 65px;
+  left: 34px;
+}
+
+#options img:hover {background-color: #ddd;}
+
+#images:hover #options {display: block;}
+
+
+#save:hover, #del:hover , #searchbtn:hover{
+  
+    border: 2px solid #2FB553;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+#save:disabled {
+    cursor: not-allowed;
+    color: #A8A8A8;
+    background-color: #E3E3E3;
+    border: 2px solid #E3E3E3;
+}
+
+#favsearch {
+	display: none;
+}
+
+
+
+.searchgame {
+	position:relative;
+	left:50px;
+	top:10px;
+	text-align:center;
+
+	margin:auto;
+}
+
+#bar {
+	height:25px;
+	width: 300px;
+}
+
+#searchbtn {
+
+
+	height:22px;
+	width:95px;
+	background-color: #52e374;
+
+
+	font-family: 'Roboto Condensed', sans-serif;
+	
+	border:0px;
+	font-size:15px;
+	text-align:center;
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#error1{
+	color:white;
+	font-family: 'Roboto Condensed', sans-serif;
+	position:relative;
+	left: 160px;
+	top:15px;
+	height:20px;
+}
+
+#error1:empty {
+    height: 20px;
+   
+}
+

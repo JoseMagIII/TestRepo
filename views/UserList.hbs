@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<link rel="stylesheet" href="/css/MyList.css">
+		<link rel="stylesheet" href="/css/Header.css">
+		<title>GameDex | My Game Lists</title>
+	</head>
+	<body>
+		{{> header username = currUser.username profilepic = currUser.profilepic password = currUser.password bio = currUser.bio fav1 = currUser.fav1 fav2 = currUser.fav2 fav3 = currUser.fav3}}
+		<!--body2 start-->
+		<div id = "body2">
+			<!--content start-->
+			<div id = "content">
+					<div id = "content2header">
+						<p id = "headertext">All Game Lists </p>
+						{{#if isMine}}
+						<a href = "/NewList/test" id = "newlistbutton">+ New List</a>
+						{{/if}}
+						
+					</div>
+					<!--content2body start-->
+					<div id="content2body">
+						
+						{{#if empty}}
+						<p id = "ListEmpty"> USER HAS NO LISTS </p>
+						{{/if}}
+						
+						{{#each lists}}
+						<div class="list_block">
+							<div class="col1">
+								<a href={{url}}><img class="thumbnail" src={{thumbnail}}></img></a>
+							</div>
+							<div class="col2">
+								<p class="list_title">{{name}}</p>
+								<p class="list_desc">{{description}}</p>
+							</div>
+							<div class="col3"></div>
+						</div>
+						{{/each}}
+						
+						
+						
+					</div>
+					
+				<p id = "invi"> THIS IS AN INVISBLE TEXT </p>
+				
+			</div>
+			<!--content end-->
+		</div>
+		<!--body2 end-->
+	</body>
+</html>
+

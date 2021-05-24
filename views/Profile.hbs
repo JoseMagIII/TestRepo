@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GameDex | {{profileOwner.username}}</title>
+		<link rel="stylesheet" type="text/css" href="/css/Profile.css">
+		<link rel="stylesheet" href="/css/Header.css">
+	</head>
+	<body>
+		{{> header username = currUser.username profilepic = currUser.profilepic password = currUser.password bio = currUser.bio fav1 = currUser.fav1 fav2 = currUser.fav2 fav3 = currUser.fav3}}
+		<div id="content_box_bg">
+			<div id="content_box">
+				<div class="groups" id="group1">
+					<div id="avatar_username">
+						<div id="avatar"><img id="avatar_img" src={{profileOwner.profilepic}}></img></div>
+						<p id="username">{{profileOwner.username}}</p>
+					</div>
+					<div id="bio_box">
+						<p id="bio">{{profileOwner.bio}}</p>
+					</div>
+				</div>
+				<div class="groups" id="group2">
+					<div id="g2header"><p id="favgames">Favorite Games</p></div>
+					<div id="g2body">
+						{{#if profileOwner.fav1}}
+						<a href="{{profileOwner.fav1_URL}}" class="favgame" id="game1">
+							<div class="coverart" id="img1"><img class="coverart_imgs" src="{{profileOwner.fav1}}"></img></div>
+							<!--<p class="gametitle" id="g1title">{{profileOwner.fav1}}</p>-->
+						</a>
+						{{/if}}
+						{{#if profileOwner.fav2}}
+						<a href="{{profileOwner.fav2_URL}}" class="favgame" id="game2">
+							<div class="coverart" id="img2"><img class="coverart_imgs" src="{{profileOwner.fav2}}"></div>
+							<!--<p class="gametitle" id="g2title">{{profileOwner.fav2}}</p>-->
+						</a>
+						{{/if}}
+						{{#if profileOwner.fav3}}
+						<a href="{{profileOwner.fav3_URL}}" class="favgame" id="game3">
+							<div class="coverart" id="img3"><img class="coverart_imgs" src="{{profileOwner.fav3}}"></div>
+							<!--<p class="gametitle" id="g3title">{{profileOwner.fav3}}</p>-->
+						</a>
+						{{/if}}
+					</div>
+				</div>
+				<div class="groups" id="group3">
+					<a href="../My Game Lists/UserList.html" id="g3header"><p id="gamelists">Game Lists</p></a>
+					<div id="g3body">
+						{{#each lists}}
+						<div class="listrow1" id="list1">
+							<a href={{url}} class="list_img"><img class="list_imgs" src={{thumbnail}}></img></a>
+							<a href={{url}} class="list_text">
+								<p class="list_title">{{name}}</p>
+								<p class="list_desc">{{description}}</p>
+							</a>
+						</div>
+						{{/each}}
+					</div>
+				</div>
+				<div class="groups" id="group4">
+					<div id="g4header"><p id="activity">Recent Activity</p></div>
+					<div id="g4body">
+						{{#each activity}}
+						<div class="rec_act" id="rec_act">
+							<p class="date">{{formatDate date}}</p>
+							<div class="act_avatar"><img class="act_avatar_imgs" src="{{profilepic}}"></img></div>
+							{{#if commentOn}}<p class="act_desc"><span class="bold">{{username}}</span> wrote a review on {{commentOn}}</p>
+							{{else if likeCommentOn}} <p class="act_desc"><span class="bold">{{username}}</span> liked a review on {{likeCommentOn}}</p>
+							{{else if commentID}} <p class="act_desc"><span class="bold">{{username}}</span> liked {{commentID}}</p>
+							{{/if}}							
+						</div>
+						{{/each}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

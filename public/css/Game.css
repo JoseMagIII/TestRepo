@@ -1,0 +1,577 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@700&display=swap');
+
+body{
+	background-color: #2A2A2A;
+	margin: 0;
+	padding: 0;
+	/*height: 100vh;
+	width: 100vw;*/
+	overflow-x: hidden; /*hides the horizontal scrollbar*/
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+#header{
+	background-color: #52E374;
+	width: 100%;
+	height: 45px;
+	display: flex;
+}
+
+#website_title{
+	color: white;
+	font-family: Roboto Condensed;
+	font-weight: bold;
+	font-size: 28px;
+	margin: auto;
+}
+
+#content_box_bg{
+	background-color: #3D3D3D;
+	height: 100%;
+	width: 800px;
+	margin: auto;
+	display: flex;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#content_box{
+	background-color: #3D3D3D;
+	height: 1200px;
+	width: 900px;
+	display: flex;
+	flex-direction: column;
+}
+
+#group1{
+	background-color: black;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cover_art_area{
+	background-color: white;
+	width: 25%;
+	height: 100%;
+}
+
+#cover_art{
+	width: 100%;
+	height: 100%;
+	/*box-sizing: border-box;
+	border: solid;
+	border-color: black;
+	border-width: 1px;*/
+}
+
+#video_area{
+	width: 75%;
+	height: 100%;
+}
+
+#embed_video{
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+#group2{
+	/*background-color: black;*/
+	width: 100%;
+	height: 180px;
+	display: flex;
+}
+
+#title_area{
+	/*background-color: red;*/
+	width: 25%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	border-right: solid;
+	border-right-color: white;
+	border-right-width: 1px;
+	margin-top: 10px;
+}
+
+#game_title{
+	font-family: Roboto Condensed;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	margin: 0;
+	font-size: 20px;
+	margin-bottom: 10px;
+	/*background-color: green;*/
+}
+
+#rating{
+	/*background-color: white;*/
+	height: 16%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.star_btn{
+	width: 9.5%;
+	height: 100%;
+	cursor: pointer;
+	padding: 0;
+	margin-right: 2px;
+	background-color: transparent;
+	border: 0;
+	outline: none;
+	margin-bottom: 0;
+}
+
+.stars{
+	height: 60%;
+	width: 100%;
+}
+
+#buttons_area{
+	/*background-color: orange;*/
+	height: 15%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#like_game{
+	margin: auto;
+	margin-top: 3px;
+	width: 100%;
+	height: 100%;
+}
+
+#like_game_btn{
+	margin-right: 5px;
+	background-color: #525252;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	width: 18%;
+	border-radius: 8px;
+}
+
+#add2list_btn{
+	background-color: #52E374;
+	outline: none;
+	border: 0;
+	cursor: pointer;
+}
+
+#add2list{
+	font-family: Roboto Condensed;
+	color: white;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+}
+
+#desc_area{
+	width: 75%;
+	height: 100%;
+	margin-top: 10px;
+}
+
+#game_desc{
+	font-family: Cabin;
+	color: white;
+	font-size: 18px;
+	text-align: right;
+	width: 95%;
+	margin: auto;
+	margin-top: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#game_deets{
+	font-family: Cabin;
+	text-align: right;
+	color: white;
+	font-size: 12px;
+	width: 95%;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+#group3{
+	margin-top: 50px;
+	height: 50%;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#reviews{
+	font-family: Cabin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: white;
+	width: 100%;
+	text-align: left;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+#review_box{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+#col1{
+	height: 100%;
+	width: 9%;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+#col1 img{
+	height: 60px;
+	width: 62px;
+}
+
+#col2{
+	height: 100%;
+	width: 80%;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+#col3{
+	height: 100%;
+	width: 10%;
+	display: flex;
+	flex-direction: column;
+}
+
+.col1row{
+	background-color: white;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 0;
+	margin-left: 0;
+	height: 10%;
+	width: 100%;
+}
+
+.col2row{
+	height: 12%;
+	width: 100%;
+	margin: 0;
+	margin-top: 7px;
+	display: flex;
+	flex-direction: column;
+}
+
+.col2row{
+	height: 12%;
+	width: 100%;
+	margin: 0;
+	margin-top: 7px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+
+#review{
+	margin: 0;
+	font-family: Cabin;
+	font-style: normal;
+	font-weight: normal;
+	color: white;
+	border: 0;
+	width: 100%;
+	height: 55px;
+	background-color: black;
+	outline: none;
+}
+
+.user_rating{
+	height: 30%;
+	width: 100%;
+	margin-top: 5px;
+}
+
+.fivestar{
+	height: 60%;
+	margin: 0px;
+	margin-left: 5px;
+}
+
+.user_review{
+	margin: 0px;
+	margin-left: 5px;
+	color: white;
+	font-family: Cabin;
+	font-size: 13px;
+}
+
+.col3row{
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 80%;
+	height: 4%;
+	width: 70%;
+}
+
+#col3row1{
+	width: 100%;
+	height: 4%;
+	margin-bottom: 60px;
+}
+
+#post_btn{
+	color: white;
+	font-family: Roboto Condensed;
+	width: 100%;
+	height: 100%;
+	background-color: #52E374;
+	outline: none;
+	border: 0;
+	cursor: pointer;
+}
+
+.like_rev_btn{
+	width: 100%;
+	height: 100%;
+	margin-right: 5px;
+	background-color: #525252;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	border-radius: 8px;
+	display: flex;
+}
+
+.like_rev{
+	width: 50%;
+	height: 90%;
+	margin-top: 2px;
+}
+
+.num_likes{
+	margin: 0;
+	margin-top: 2px;
+	margin-left: 5px;
+	color: white;
+	
+}
+
+
+#commentsection{
+	overflow: auto;
+	width:  800px;
+	height: 650px;
+
+}
+#commentheading{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	font-family: Cabin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 36px;
+	color: #FFFFFF;
+}
+
+#commentbox{
+	margin-top: 27px;
+	margin-bottom: 20px;
+	width: 660px;
+	height: 60px;
+	position: relative;
+	bottom: 87px;
+	left: 100px;
+	background: #FFFFFF;
+	padding-left:0;
+	padding-top:0;
+	padding-bottom:0.4em;
+	padding-right: 0.4em;
+	resize: none;
+}
+
+::placeholder {
+  color: #C2C2C2;
+  font-size: 20px;
+}
+
+#commentlist{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.commentelements{
+	width: 400px;
+	height: 100px;
+}
+
+.comment{
+	margin-top: 20px;
+	width: 500px;
+	height: 80px;
+	
+	position: relative;
+	bottom: 85px;
+	left: 115px;
+	
+	font-family: Cabin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 24px;
+	
+	color: #FFFFFF;
+}
+
+.heart{
+	width: 25px;
+	height: 25px;
+	position: relative;
+	right: 10px;
+	top: 2px;
+}
+
+.heartempty{
+	width: 25px;
+	height: 25px;
+	position: relative;
+	right: 10px;
+	top: 2px;
+}
+
+.commentbuttons{
+	background: #525252;
+	border-radius: 6px;
+	width: 64px;
+  	height: 34px;
+  	border-style: solid;
+  	border-color: #525252;
+	
+	position: relative;
+	bottom: 165px;
+	left: 700px;
+	cursor: pointer;
+}
+
+.commentbuttons:focus {
+  outline: none;
+}
+
+#listlikes{
+	background: #525252;
+	border-radius: 6px;
+	width: 64px;
+  	height: 34px;
+  	border-style: solid;
+  	border-color: #525252;
+  	
+  	position: relative;
+  	bottom: 50px;
+  	left: 480px;
+  	cursor: pointer;
+}
+
+#listlikes:focus {
+  outline: none;
+}
+
+.number{
+	position: relative;
+	bottom: 25px;
+	left: 15px;
+	font-family: Cabin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 24px;
+
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#commentsection::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+#commentsection::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+ 
+
+#commentsection::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 5px;
+}
+
+#commentsection::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+.avatar{
+	width: 60px;
+	height: 60px;
+	margin-left: 20px;
+}
+
+#numLikes{
+	font-family: Cabin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: white;
+	position: relative;
+	top: 40px;
+	right: 60px;
+}
+
+.delete{
+	position: relative;
+	left: 680px;
+	bottom: 170px;
+	
+	background: none;
+
+  	border-style: none;
+  	border-color: none;
+	
+	cursor: pointer;
+	color: white;
+	font-size: 20px;
+}

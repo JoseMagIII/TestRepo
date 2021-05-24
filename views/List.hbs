@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="/css/GameList.css">
+<link rel="stylesheet" href="/css/Header.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/AJAXScripts/List.js" type="text/javascript"></script>
+<title>GameDex | {{list.username}} - {{list.name}}</title>
+</head>
+<body>
+
+{{> header username = currUser.username profilepic = currUser.profilepic password = currUser.password bio = currUser.bio fav1 = currUser.fav1 fav2 = currUser.fav2 fav3 = currUser.fav3}}
+
+<div id = "body">
+<p hidden id = "username">{{currUser.username}}</p>
+<p hidden id = "listName">{{list.name}}</p>
+<p hidden id = "listOwner">{{list.username}}</p>
+<p hidden id = "profpic">{{currUser.profilepic}}</p>
+<div id = "content">
+
+<div id = "content2">
+
+<div id = "content2footer">
+<p id = "footerheading">{{list.name}}</p>
+
+ <!--Check if curr user owns list-->
+ {{#if isMine}}
+<a href = "/GameList/{{currUser.username}}/{{list.name}}/edit" id = "editlistbutton">Edit List</a>
+{{/if}}
+
+<button id = "listlikes"> <!--Add a script to change heart on click-->
+<p hidden id = "isListLiked">notLiked</p>
+<img src = "/images/heartempty.png" id = "listHeart">  <p id = "numLikes">{{list.likes}}</p>
+</button>
+</div>
+
+
+<div id = "content2body">
+	<ul id = "mylist">
+	
+		{{#each games}}
+		<li class = "listelements"> 
+		<a href = {{url}} >
+		<img src = {{thumbnail}} >
+		</a>
+		<a href = {{url}} class = "GameTitle">{{name}} </a>
+		<p class = "line"></p>
+		</li>
+		{{/each}}
+	
+	</ul>
+</div>
+
+
+<div id = "commentsection">
+
+
+
+<p id = "commentheading">Comments</p>
+
+<ul id = "commentlist">
+
+	<li class = "commentelements">
+	<p id = "profilepic" hidden>{{currUser.profilepic}} </p>
+	<a href = "/profile/{{currUser.username}}">
+	<img src = {{currUser.profilepic}} class = "avatar">
+	</a>
+	<form id = "addcomment">
+	<textarea id="commentbox"  name="commentbox" placeholder = "Write a comment"></textarea>
+	</form>
+	</li>
+	
+	
+	{{#each comments}}
+	<li class = "commentelements">
+	<a href = "/profile/{{username}}"> <!--Baka comments.username to-->
+	<img src = "{{profilepic}}" class = "avatar">
+	</a>
+	
+	<p class = "comment" >{{text}}</p>
+	<button hidden class = "delete">
+	<p hidden id = "commentID2">{{_id}}</p>X
+	</button>
+	<button class = "commentbuttons">
+	<p hidden id = "isLiked">notLiked</p>
+	<p hidden id = "commentID">{{_id}}</p>
+	<p hidden id = "commentBy">{{username}}</p>
+	<img src = "/images/heartempty.png" class = "heart">  <p class = "number">{{likes}}</p> <!--function pang update-->
+	</button>
+	</li>
+	{{/each}}
+</ul>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+<link rel="stylesheet" href="/css/Accsett.css">
+<link rel="stylesheet" href="/css/Header.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/AJAXScripts/AccSett.js" type="text/javascript"></script>
+
+<title>GameDex | Account Settings</title>
+
+</head>
+
+<body>
+	<!--header start-->
+	{{> header}}
+	<!--header end-->
+
+
+	<div id = "content">
+		<div id="firstline">
+			
+		<!--		
+			<a onclick="upload()" id="upload">
+				<img src="../My Profile/images/Anon.jpg" alt="Upload New Image" width="250" height="250">
+			</a>
+			-->
+
+			<form name="form" method="post">
+				<div id="topmost">
+					<div id="images">
+					
+							<img src="{{profilepic}}" alt="Upload New Image" width="250" height="250" id="profpic">
+							
+
+							<div id='options'>
+								<img src="/profilePics/default1.png" alt="default1" width="150" height="150" id="default1">
+								<img src="/profilePics/default2.png" alt="default2" width="150" height="150" id="default2">
+								<img src="/profilePics/default3.png" alt="default2" width="150" height="150" id="default3">
+								<img src="/profilePics/default4.png" alt="default2" width="150" height="150" id="default4">
+								<img src="/profilePics/default5.png" alt="default2" width="150" height="150" id="default5">
+							</div>
+					</div>
+					
+		
+					<div class="inputs">
+				
+
+						<textarea id="bio" type="text" id="bio" name="bio" placeholder="Enter Bio">{{bio}}</textarea>
+					
+				
+					</div>
+				</div>
+
+				<div id="belowobjects">
+					<p id="uploadtext">
+						Username: {{username}}
+					</p>
+					<div id="btn">
+						<input type="button" id="save" name="save"  value="Save Changes">
+						<!--<input type="button" id="del"  name="del" value="Delete Account" onclick="/delete"> -->
+						<a id="del" name="del" href='/delete'>Delete Account</a>
+					</div>
+
+					<p id="error">
+
+					</p>
+				</div>
+
+				<div id="secondline" class="inputs">
+
+					<div id="updateform">
+
+						<label>Update Username</label><br>
+						<input id="updateuser" type="text" id="updateuser" name="updateuser" placeholder="Enter Username">
+						<br><br>
+						<label>Update Password</label><br>
+						<input id="updatepass" type="password" id="updatepass" name="updatepass" placeholder="Update Password">
+						<br><br>
+						<label>Confirm Password</label><br>
+						<input id="confirmpass" type="password" id="confirmpass" name="confirmpass" placeholder="Confirm Password">
+						<br><br>
+						<label>Current Password</label><br>
+						<input id="currentpass" type="password" id="currentpass" name="currentpass" placeholder="Current Password">
+						<br>
+					</div>
+
+		
+			
+
+
+					<div id="favorites">
+						<p id="favoritestext">Favorite Games</p>
+						<div id="favoritespic">
+							<a class="upload">
+								<img src="{{fav1}}" alt="Change Favorites" width="125" height="175" Title="Change Favorite" id="fav1">
+							</a>
+
+							<a class="upload">
+								<img src="{{fav2}}" alt="Change Favorites" width="125" height="175" Title="Change Favorite" id="fav2">
+							</a>
+
+							<a class="upload">
+								<img src="{{fav3}}" alt="Change Favorites" width="125" height="175" Title="Change Favorite" id="fav3">
+							</a>
+						</div>
+						<div id="favsearch">
+						<label class="searchgame" id="searchgame">Default</label><br>
+						<input type="text" id="bar" class="searchgame" name="searchgame" placeholder="Search Game">
+						<input type="button" id="searchbtn" value="Search" class="searchgame">
+
+						<p id="error1">
+							
+						</p>
+
+						</div>
+
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+function upload(){
+	alert('Upload Image to be Implemented!');
+}
+
+function addfavorites(){
+	alert('Add Favorites to be Implemented!');
+}
+
+function save(){
+	alert('Save Changes to be Implemented!');
+}
+
+function del(){
+	alert('Delete Account to be Implemented!');
+}
+
+</script>
+</body>
+
+</html>

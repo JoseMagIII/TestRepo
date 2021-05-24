@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GameDex | Log-in</title>
+	<link rel="stylesheet" type="text/css" href="/css/loginValidate.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/AJAXScripts/RegLog.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="pagecontainer">
+		<div id="title">
+			<h1>
+				GameDex
+			</h1>
+		
+			<p id="titletext">Share your thoughts on games with the community</p>
+
+			
+		</div>
+
+		<div id="signlog">
+			<div id="buttons">
+				<button id="signup" onclick="signup()"><a href="/" id="ref">Sign-up</a></button>
+				<button id="login" onclick="login()">Log-in</button>
+			</div>
+			
+			<div id="inputs">
+				<form id="btn" method="post" action="/login">
+
+					<input id='username' type="text" name="username" placeholder="Username" required>
+					<input id='password' type="password" name="password" placeholder="Password" required>
+
+					<input id="create" name="create" type="submit" value="Log-in"> 
+				</form>
+
+				<p id="error">{{usernameError}}</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+
+</html>

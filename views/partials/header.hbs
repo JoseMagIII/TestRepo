@@ -1,0 +1,19 @@
+<div id="header">
+	<h1>GameDex</h1>
+	<nav>
+		<ul>
+			<li class="navlinks"><a href="/home">Home</a></li>
+			<li class="navlinks"><a href="/browse">Browse Games</a></li>
+			<li class="navlinks"><a href="/gamelist/{{username}}">My Lists</a></li>
+		</ul>
+	</nav>
+	<a href="/profile/{{username}}"><img src={{profilepic}} id="profile_pic"></img></a>
+	<button class="menu_btn">
+		<img src="/images/menu.png" id="menu_icon">
+			<div class="drop_menu">
+				<a class="drpdwn_link" id="acc_settings" href="/account_settings">Account Settings</a>
+				<a class="drpdwn_link" id="logout" href="/logout">Log-out</a>
+			</div>
+		</img>
+	</button>
+</div>

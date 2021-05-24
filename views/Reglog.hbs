@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GameDex | Log-in</title>
+	<link rel="stylesheet" type="text/css" href="/css/Reglog.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/AJAXScripts/RegLog.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="pagecontainer">
+		<div id="title">
+			<h1>
+				GameDex
+			</h1>
+		
+			<p id="titletext">Share your thoughts on games with the community</p>
+
+			
+		</div>
+
+		<div id="signlog">
+			<div id="buttons">
+				<button id="signup" onclick="signup()">Sign-up</button>
+				<button id="login" onclick="login()"><a href="/loginPage" id="ref">Log-in</a></button>
+			</div>
+			
+			<div id="inputs">
+				<form id="btn" method="post" action="/register">
+
+					<input id='username' type="text" name="username" placeholder="Username" required>
+					<input id='password' type="password" name="password" placeholder="Password" required>
+
+					<input id="create" name="create" type="submit" value="Create Account"> 
+				</form>
+
+				<p id="error">{{usernameError}}</p>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript">
+
+	
+
+	function signup() {
+
+		var username = document.getElementById("username");
+		username.value='';
+		var password = document.getElementById("password");
+		password.value='';
+		
+
+		var login = document.getElementById("login");
+		var signup = document.getElementById("signup");
+
+		signup.style.backgroundColor = "#2a2a2a";
+		login.style.backgroundColor = "#393939";
+
+		var btn = document.getElementById("btn");
+		var create = document.getElementById("create");
+
+		create.value="Create Account";
+		//btn.action="/register";
+		btn.method='';
+		create.type="button";
+		btn.action='';
+		}
+
+	function login(){
+		var username = document.getElementById("username");
+		username.value='';
+		var password = document.getElementById("password");
+		password.value='';
+
+		
+		var login = document.getElementById("login");
+		var signup = document.getElementById("signup");
+
+		login.style.backgroundColor = "#2a2a2a";
+		signup.style.backgroundColor = "#393939";
+
+		var btn = document.getElementById("btn");
+		var create = document.getElementById("create");
+
+		
+		create.value="Log-in";
+		btn.method="post";
+		//create.type="submit";
+		//btn.action="/home"; <!--for now, clicking 'Log-in' redirects to Homepage-->
+		
+		
+		
+	}
+
+
+
+	function clear(){
+		var username = document.getElementById("username");
+		var password = document.getElementById("password");
+
+		username.val("");
+		password.val("");
+	}
+
+</script>
+
+
+</body>
+
+</html>

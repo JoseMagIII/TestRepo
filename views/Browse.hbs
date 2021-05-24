@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="/AJAXScripts/Browse.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="/css/Browse.css">
+		<link rel="stylesheet" href="/css/Header.css">
+		<title>GameDex | Browse Games</title>
+	</head>
+	<body>
+		<!--header start-->
+		{{> header username = currUser.username profilepic = currUser.profilepic password = currUser.password bio = currUser.bio fav1 = currUser.fav1 fav2 = currUser.fav2 fav3 = currUser.fav3}}
+		<!--header end-->
+
+		<div id="content">
+			<div id="textsearch">
+				<p id="browsetext">BROWSE GAMES</p>
+				<div id="filterdropdown">
+
+					<p id="filter">Filter by</p>
+					<select id="filtersdrop" onchange = "gameFilter()">
+						<option value="All" selected>All</option>
+						<option value="Action">Action</option>
+						<option value="Adventure">Adventure</option>
+						<option value="MMO">MMO</option>
+						<option value="RPG">RPG</option>
+						<option value="Strategy">Strategy</option>
+					</select>
+				</div>
+				<input type="text" placeholder="Search..." id="search">
+			</div>
+
+			<div id="gamesdisplay">
+				<div id="games">
+					{{#each games}}
+						<a href="{{url}}" class="gameitem {{genre}}" id="" value="{{name}}"> 
+							<img src="{{cover}}" alt="{{name}} Thumbnail" width="125" height="175" id="{{name}}"></img>
+							{{name}}
+						</a>
+					{{/each}}
+				</div>
+			</div>
+		</div>
+		<script type="
+	</body>
+</html>

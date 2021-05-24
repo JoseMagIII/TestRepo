@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+html{
+	/*display:table;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:auto;
+}
+
+body{
+	background: #2A2A2A;
+	margin:0px;
+	width: 100%;
+}
+
+#content{
+	margin: auto;
+	width: 867px;
+	height: 1200px;
+	background: #3D3D3D;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#textsearch{
+	position:relative;
+	top:100px;
+}
+
+#browsetext{
+	font-family: Cabin;
+	color:white;
+	font-size: 25pt;
+	display:flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+#filterdropdown{
+	display:flex;
+	margin-left:100px;
+	margin-right:669px;
+}
+
+#filter {
+	font-family: Cabin;
+	color:white;
+	font-size: 15pt;
+	
+}
+
+#filterimage{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	height: 8px;
+	width: 15px;
+}
+
+#filtersdrop {
+  position: absolute;
+  background-color: #2A2A2A;
+  min-width: 160px;
+  z-index: 1;
+  text-align: right;
+  color:white;
+  top:51px;
+  left: 175px;
+}
+
+#search{
+	height:40px;
+	width:650px;
+	margin-left:100px;
+	font-family:Cabin;
+	font-size:15pt;
+	background-color: black;
+	color: white;
+	padding-left: 10px;
+	border: solid #6b6b6b 1px;
+	outline: none;
+}
+
+#gamesdisplay{
+	background: #141414;
+	height:630px;
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	top:125px;
+	border-radius: 15px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#games{
+	margin-left:10px;
+	margin-right:10px;
+	display:flex;
+	align-content:flex-start;
+	width:900px;
+	flex-wrap:wrap;
+	height:800px;
+	
+
+}
+
+.gameitem{
+	margin:15px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: Cabin;
+	font-size: 13px;
+	width: 125px;
+}
+
+.expenseItem{
+	margin:15px;
+}
+
+#gamesdisplay::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+#gamesdisplay::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+ 
+
+#gamesdisplay::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 5px;
+}
+
+#gamesdisplay::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}

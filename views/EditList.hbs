@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="/css/NewEditList.css">
+<link rel="stylesheet" href="/css/Header.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/AJAXScripts/Edit.js" type="text/javascript"></script>
+<title>GameDex | {{currUser.username}} - {{list.name}}</title>
+</head>
+<body>
+
+{{> header username = currUser.username profilepic = currUser.profilepic password = currUser.password bio = currUser.bio fav1 = currUser.fav1 fav2 = currUser.fav2 fav3 = currUser.fav3}}
+
+<div id = "body">
+<div id = "content">
+<p hidden id = "username">{{currUser.username}}</p>
+<p hidden id = "listname2">{{list.name}}</p>
+<p hidden id = "numGames">{{games.length}}</p>
+<div id = "content2">
+
+<div id = "content2footer">
+<input type = "text" id = "listname" placeholder = "Enter List Name">
+<textarea id="description"  name="commentbox" placeholder = "List Description"></textarea>
+<a href = "javascript:;" id = "addgamebutton">+ Add Game</a>
+<a href = "/GameList/{{currUser.username}}" id = "deletelistbutton">X Delete List</a> <!-- change href for testing lang to -->
+<button id = "savechangesbutton" value = "Save Changes">Save</button>
+</div>
+
+
+<div id = "content2body">
+	{{#each games}}
+	<div class="gameitem">
+	<p hidden class = "gameName">{{name}}</p>
+	<img src={{thumbnail}} alt="{{name}} Thumbnail" width="125" height="175">
+	<button class = "delete">
+	<p hidden class = "gameName">{{name}}</p>X</button>
+	</div>
+	{{/each}}
+	
+	
+<p hidden id = "placeholdertext">List Empty</p>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+</body>
+</html>

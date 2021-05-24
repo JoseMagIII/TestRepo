@@ -1,0 +1,187 @@
+@charset "ISO-8859-1";
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@700&display=swap');
+
+html, body{
+	background: #2A2A2A;
+	margin: 0px;
+    height: 100%;
+	
+}
+
+#body
+{
+	margin: 0 auto;
+}
+
+
+#content{
+width: 867px;
+margin: 0px auto;
+height: 1000px;
+background: #3D3D3D;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+position: relative;
+}
+
+#content2{
+	width: 767px;
+	position: relative;
+	margin: auto;
+	height: 749px;
+	top: 60px;
+}
+
+#content2body{
+	background: #141414;
+	height: 92%;
+	position: relative;
+	display:flex;
+	align-content:flex-start;
+	overflow: auto;
+	flex-wrap:wrap;
+
+}
+
+
+
+#content2footer{
+	background: #393939;
+	color: white;
+	height: 200px;	
+}
+
+#addgamebutton{
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration: none;
+  background-color: #52E374;
+  color: white;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #52E374;
+  border-right: 1px solid #52E374;
+  border-bottom: 1px solid #52E374;
+  border-left: 1px solid #52E374;
+  
+  
+  position: relative;
+  left: 125px;
+  top: 30px;
+}
+
+#deletelistbutton{
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration: none;
+  background-color: #E35B52;
+  color: white;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #E35B52;
+  border-right: 1px solid #E35B52;
+  border-bottom: 1px solid #E35B52;
+  border-left: 1px solid #E35B52;
+  
+  
+  position: relative;
+  left: 0px;
+  top: 75px;
+}
+
+
+#listname{
+	width: 216px;
+height: 35px;
+background: #FFFFFF;
+border: solid;
+border-color: white;
+
+position: relative;
+left: 18px;
+top: 11px;
+
+}
+
+::placeholder {
+  color: #C2C2C2;
+  font-size: 26px;
+}
+
+#savechangesbutton{
+	width: 100px;
+	height: 30px;
+
+	background: #52E374;
+	
+	
+	cursor: pointer;
+	
+	color: white;
+	font-family: Roboto Condensed;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 18px;
+	
+	position: relative;
+	bottom: -30px;
+	right: 300px;
+}
+
+#placeholdertext{
+	width: 221px;
+
+font-family: Cabin;
+font-style: normal;
+font-weight: normal;
+font-size: 49px;
+line-height: 60px;
+
+color: #666666;
+
+position: relative;
+left: 270px;
+top: 75px;
+}
+
+.gameitem{
+	margin: 15px;
+	margin-left: 10px;
+	position: relative;
+	left: 40px;
+	top: 20px;
+}
+
+
+.delete{
+	position: relative;
+	right: 30px;
+	bottom: 150px;
+	background-color: Transparent;
+	border: none;
+	 font-family: Roboto Condensed;
+	  font-style: normal;
+	  font-weight: bold;
+	  font-size: 22px;
+	  line-height: 26px;
+	  color: white;
+}
+
+#description{
+	padding-left:0;
+padding-top:0;
+padding-bottom:0.4em;
+padding-right: 0.4em;
+
+resize: none;
+width: 250px;
+height: 50px;
+position: relative;
+top: 100px;
+right: 212px;
+}

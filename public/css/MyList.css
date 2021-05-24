@@ -1,0 +1,203 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@700&display=swap');
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #2A2A2A;
+	display: flex;
+	flex-direction: column;
+	/*height: 100vh;
+	width: 100vw;
+	overflow-x: hidden; /*hides the horizontal scrollbar*/
+}
+
+#ListEmpty {
+	position: relative;
+	height: 50px;
+	font-family: Roboto;
+	font-style: normal;
+	font-size: 60px;
+	color: white;
+	text-decoration: none;
+	margin: auto;
+}
+
+#content{
+	width: 867px;
+	margin: 0px auto;
+	height: 120%;
+	background: #3D3D3D;
+	top: -30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	flex-direction: column;
+}
+
+#content2body{
+	margin: auto;
+	margin-top: 0;
+	width: 85%;
+	height: 80%;
+	background-color: #141414;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	padding-top: 25px;
+}
+
+#content2header{
+	background: #393939;
+	color: white;
+	height: 61px;	
+	width: 97%;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	display: flex;
+}
+
+#headertext{
+	width: 50%;
+	margin: auto;
+	margin-left: 45px;
+	margin-top: 20px;
+	font-family: Cabin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 36px;
+	color: #FFFFFF;
+}
+
+#newlistbutton{
+	height: 20px;
+	width: 80px;
+	margin: auto;
+	margin-right: 45px;
+	margin-bottom: 10px;
+	font-family: Roboto Condensed;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+	background-color: #52E374;
+	color: white;
+	padding: 2px 6px 2px 6px;
+	border-top: 1px solid #52E374;
+	border-right: 1px solid #52E374;
+	border-bottom: 1px solid #52E374;
+	border-left: 1px solid #52E374;
+}
+
+.list_block{
+	position: relative;
+	background-color: transparent;
+	height: 23%;
+	width: 98%;
+	margin: auto;
+	margin-bottom: 20px;
+	border-bottom: solid #6b6b6b 1px;
+	display: flex;
+}
+
+.col1{
+	display: flex;
+	height: 100%;
+	width: 15%;
+	background-color: white;
+}
+
+.thumbnail{
+	height: 100%;
+	width: 100%;
+}
+
+.col2{
+	height: 100%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.list_title{
+	color: white;
+	font-family: Roboto;
+	font-size: 25px;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+.list_desc{
+	color: #9e9e9e;
+	font-family: Roboto;
+	font-size: 15px;
+	margin-left: 20px;
+}
+
+.col3{
+	height: 100%;
+	width: 30%;
+	background-color: transparent;
+}
+
+
+#myListContents{
+	width: 500px;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+}
+
+#myList{
+	list-style-type: none;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.list_imgs{
+	height: 100px;
+	width: 75px;
+}
+
+
+.ListTitle{
+	position: absolute;
+	height: 50px;
+	font-family: Roboto;
+	font-style: normal;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+	margin-left: 50px;
+}
+
+.ListDescription{
+	position: relative;
+	margin-left: 130px;
+	width: 370px;
+	height: 63px;
+	font-family: Cabin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 26px;
+	color: #9e9e9e;
+}
+
+#content2 img{
+	width: 133px;
+	height: 178px;
+}
+
+#invi{
+	font-family: Cabin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	height: 60px;
+	line-height: 36px;
+	color: #3D3D3D;
+	pointer-events: none;
+}

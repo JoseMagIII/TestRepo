@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GameDex | {{game.name}}</title>
+		<link rel="stylesheet" href="/Game.css">
+		<link rel="stylesheet" href="/Header.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="/AJAXScripts/Game.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="/css/Game.css">
+		<link rel="stylesheet" href="/css/Header.css">
+	</head>
+	<body>
+		{{> header username = currUser.username profilepic = currUser.profilepic password = currUser.password bio = currUser.bio fav1 = currUser.fav1 fav2 = currUser.fav2 fav3 = currUser.fav3}}
+		<!--<div id="header">
+		<h1>GameDex</h1>
+		<nav>
+			<ul>
+				<li class="navlinks"><a href="../Homepage/Home.html">Home</a></li>
+				<li class="navlinks"><a href="../Browse Games/Browse.html">Browse Games</a></li>
+				<li class="navlinks"><a href="/GameList">My Lists</a></li>
+			</ul>
+		</nav>
+		<a href="/profile/{{currUser.username}}"> <img src={{currUser.profilepic}} id="profile_pic"></img></a>
+		<button class="menu_btn">
+			<img src="/images/menu.png" id="menu_icon">
+				<div class="drop_menu">
+					<a class="drpdwn_link" id="acc_settings" href="/">Account Settings</a>
+					<a class="drpdwn_link" id="logout" href="/">Log-out</a>
+				</div>
+			</img>
+		</button>
+	</div>-->
+		<p hidden id = "username">{{currUser.username}}</p>
+		<p hidden id = "gameName">{{game.name}}</p>
+		<p hidden id = "cover">{{game.cover}}</p>
+		<p hidden id = "profpic">{{currUser.profilepic}}</p>
+		<div id="content_box_bg">
+			<div id="content_box">
+				<div id="group1">
+					<div id="cover_art_area">
+						<!--change--><img id="cover_art"src={{game.cover}}></img>
+					</div>
+					<div id="video_area">
+						<!--change--><iframe id="embed_video" src={{game.link}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div id="group2">
+					<div id="title_area">
+						<p id="game_title">{{game.name}} ({{game.year}})</p>
+						<div id="buttons_area">
+							<p hidden id = "isGameLiked">notLiked</p>
+							<button id="like_game_btn"><img id="like_game" src="/images/heartempty.png"></img></button>
+							<button id="add2list_btn"><p id="add2list">+Add to List</p></button>
+							<p id = "numLikes">{{game.likes}}</p>
+						</div>
+					</div>
+					<div id="desc_area">
+						<!--change--><p id="game_desc">{{game.description}}</p>
+						<!--change--><p id="game_deets"><span class="bold">Developer:</span> {{game.developer}} | <span class="bold">Publisher:</span> {{game.publisher}} | <span class="bold">Platform:</span> {{game.platform}} | <span class="bold">Genre:</span> {{game.genre}}</p>
+					</div>
+				</div>
+				
+				
+<div id = "commentsection">
+
+
+
+<p id = "commentheading">Comments</p>
+
+<ul id = "commentlist">
+
+	<li class = "commentelements">
+	<p id = "profilepic" hidden>{{currUser.profilepic}} </p>
+	<a href = "/profile/{{currUser.username}}">
+	<img src = "{{currUser.profilepic}}" class = "avatar">
+	</a>
+	<form id = "addcomment">
+	<textarea id="commentbox"  name="commentbox" placeholder = "Write a comment"></textarea>
+	</form>
+	</li>
+	
+	
+	{{#each comments}}
+	<li class = "commentelements">
+	<a href = "/profile/{{username}}"> <!--Baka comments.username to-->
+	<img src = {{profilepic}} class = "avatar">
+	</a>
+	
+	<p class = "comment" >{{text}}</p>
+	
+	<button hidden class = "delete">
+	<p hidden id = "commentID2">{{_id}}</p>X
+	</button>
+	<button class = "commentbuttons">
+	<p hidden id = "isLiked">notLiked</p>
+	<p hidden id = "commentID">{{_id}}</p>
+	<p hidden id = "commentBy">{{username}}</p>
+	<img src = "/images/heartempty.png" class = "heart">  <p class = "number">{{likes}}</p> <!--function pang update-->
+   
+	</li>
+	{{/each}}
+</ul>
+</div>
+
+			</div>
+		</div>
+	</body>
+</html>
